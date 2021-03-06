@@ -43,8 +43,7 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 0;
 }
 
 .container {
@@ -437,7 +436,7 @@ img {
   letter-spacing: 0.03em;
   cursor: pointer;
   transition: box-shadow 250ms var(--timing),
-    background-color 250ms var(--timing);
+    background-color 250ms var(--timing), color 250ms var(--timing);
 }
 
 .btn:hover,
@@ -518,7 +517,8 @@ img {
   transition: transform 250ms var(--timing);
 }
 
-.card:hover .card-overlay {
+.card:hover .card-overlay,
+.card:focus .card-overlay {
   transform: translateY(0);
 }
 
